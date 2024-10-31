@@ -5,7 +5,7 @@ public class LibraryRoyaltyCalculator {
 
     public static void main(String[] args) {
 
-        Auther auther1 = new Auther("Stephen King");
+        Author author1 = new Author("Stephen King");
 
     // ArrayList<Title> titles = new ArrayList<>();
 // PrintedBook("Dark Tower", "Fiction", 20, 600);
@@ -17,14 +17,13 @@ public class LibraryRoyaltyCalculator {
     AudioBook audioBookStephen1 = new AudioBook
             ("Dark Tower 3", "SKØN", 5, 1020);
 
-    auther1.addTitle(printedBookStephen1);
-    auther1.addTitle(printedBookStephen2);
-    auther1.addTitle(audioBookStephen1);
-    auther1.addTitle(new AudioBook("Dark Tower5", "SKØN", 22, 522));
+    author1.addTitle(printedBookStephen1);
+    author1.addTitle(printedBookStephen2);
+    author1.addTitle(audioBookStephen1);
+    author1.addTitle(new AudioBook("Dark Tower5", "SKØN", 22, 522));
 
-    auther1.calculateTotalPay();
 
-        System.out.println(auther1.getName() + ": " + auther1.calculateTotalPay() + " Kr.");
+        System.out.println(author1.getName() + ": " + author1.calculateTotalPay() + " Kr.");
 
     }
 }

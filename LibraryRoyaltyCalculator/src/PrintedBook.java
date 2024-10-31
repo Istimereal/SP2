@@ -10,10 +10,12 @@ public class PrintedBook extends Title {
 
     }
 @Override
-        double calculatePoints(){
+        double calculatePoints()
+{
         return points = copies*pages;
     }
 
+    @Override
         protected double calculateLiteraturePoints(double points){
 
         if(getLiteratureType().equals("BI") || getLiteratureType().equals("TE")){
