@@ -9,14 +9,12 @@ public class PrintedBook extends Title {
         this.pages = pages;
 
     }
-
-    @Override
-    double calculatePoints(){
+@Override
+        double calculatePoints(){
         return points = copies*pages;
     }
 
-    @Override
-    protected double calculateLiteraturePoints(double points){
+        protected double calculateLiteraturePoints(double points){
 
         if(getLiteratureType().equals("BI") || getLiteratureType().equals("TE")){
             return points*3;
